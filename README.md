@@ -54,6 +54,25 @@ Please see the new [Changelog](https://github.com/chrisbanes/Android-PullToRefre
 
 I will gladly accept pull requests for fixes and feature enhancements but please do them in the dev branch. The master branch is for the latest stable code,  dev is where I try things out before releasing them as stable. Any pull requests that are against master from now on will be closed asking for you to do another pull against dev.
 
+## How To 
+
+To get a Git project into your build:
+
+#### Step 1. Add the JitPack repository to your build file
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	
+#### Step 2. Add the dependency
+
+	dependencies {
+	        implementation 'com.github.nangongyibin:Android_PullToRefresh:v2.1.1'
+	}
+
 ## Acknowledgments
 
 * [Stefano Dacchille](https://github.com/stefanodacchille)
